@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for the first CSE 110 project meeting">
+    <title>CSE 110 Project First Meeting Notes</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSE 110 Project First Meeting Notes</h1>
+        <nav>
+            <a href="#overview">Overview</a><br>
+            <a href="#attendance">Attendance</a><br>
+            <a href="#agenda">Agenda</a><br>
+            <a href="#unfinished">Unfinished Business</a><br>
+            <a href="#new-business">New Business</a><br>
+            <a href="#misc">Miscellaneous</a><br>
+            <a href="#media">Media</a><br>
+            <a href="#form">Feedback Form</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <h3>Date</h3>
+            <p>April 8, 2026</p>
+            <div>
+                <p>
+                    This page contains the meeting minutes for the <strong>first team meeting</strong>
+                    for the CSE 110 project. The purpose of this meeting was to discuss
+                    <em>project goals</em>, assign initial roles, and plan communication.
+                </p>
+                <p>
+                    <span>Meeting Type:</span> <b>Brainstorming and Planning</b>
+                </p>
+            </div>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <h3>Attendees</h3>
+            <ul>
+                <li>Nikita Jos</li>
+                <li>John Doe</li>
+                <li>Jane Smith</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <h3>Topics to Cover</h3>
+            <ol>
+                <li>Review project requirements</li>
+                <li>Assign roles and responsibilities</li>
+                <li>Set up team communication plan</li>
+                <li>Schedule recurring meetings</li>
+            </ol>
+        </section>
+
+        <section id="unfinished">
+            <h2>Unfinished Business</h2>
+            <h3>Items from Last Meeting</h3>
+            <p>None. This was the first meeting.</p>
+        </section>
+
+        <section id="new-business">
+            <h2>New Business</h2>
+            <h3>Discussion and Decisions</h3>
+            <p>The team discussed the project requirements and agreed on initial responsibilities.</p>
+
+            <ul>
+                <li>Nikita Jos - Project Manager</li>
+                <li>John Doe - Lead Developer</li>
+                <li>Jane Smith - Quality Assurance</li>
+            </ul>
+
+            <p>
+                The team decided to use <i>Slack</i> for communication and to hold weekly meetings
+                every Wednesday at 12:00 PM.
+            </p>
+
+            <p>
+                One important note was that everyone should complete their assigned setup tasks
+                <br>
+                before the next meeting.
+            </p>
+        </section>
+
+        <section id="misc">
+            <h2>Miscellaneous Comments / Questions / Concerns</h2>
+            <h3>Additional Notes</h3>
+            <p>No major concerns were raised during the meeting.</p>
+
+            <details>
+                <summary>Click to view extra discussion notes</summary>
+                <p>
+                    Team members mentioned that future meetings may include architecture diagrams,
+                    progress updates, and documentation reviews.
+                </p>
+            </details>
+        </section>
+
+        <section id="media">
+            <h2>Meeting Media</h2>
+
+            <h3>Workflow Diagram</h3>
+            <img src="workflow_diagram.jpg" alt="Workflow diagram showing the team project planning process"
+                width="600">
+
+            <h3>Video Recording of the Meeting</h3>
+            <video controls width="600">
+                <source src="meeting_recording.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Audio Recording of the Meeting</h3>
+            <audio controls>
+                <source src="meeting_recording.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+        <section id="form">
+            <h2>Feedback Form</h2>
+            <h3>Meeting Response</h3>
+
+            <form>
+                <fieldset>
+                    <legend>Submit Your Feedback</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" list="team-members">
+                    </p>
+
+                    <datalist id="team-members">
+                        <option value="Nikita Jos"></option>
+                        <option value="John Doe"></option>
+                        <option value="Jane Smith"></option>
+                    </datalist>
+
+                    <p>
+                        <label for="meeting-date">Meeting Date:</label>
+                        <input type="date" id="meeting-date" name="meeting-date">
+                    </p>
+
+                    <p>Which topics were useful?</p>
+                    <p>
+                        <input type="checkbox" id="requirements" name="useful-topic" value="requirements">
+                        <label for="requirements">Project requirements</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="roles" name="useful-topic" value="roles">
+                        <label for="roles">Role assignments</label>
+                    </p>
+
+                    <p>Will you attend the next meeting?</p>
+                    <p>
+                        <input type="radio" id="yes" name="next-meeting" value="yes">
+                        <label for="yes">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="no" name="next-meeting" value="no">
+                        <label for="no">No</label>
+                    </p>
+
+                    <p>
+                        <label for="role-select">Select your role:</label>
+                        <select id="role-select" name="role-select">
+                            <option value="project-manager">Project Manager</option>
+                            <option value="lead-developer">Lead Developer</option>
+                            <option value="quality-assurance">Quality Assurance</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label>
+                    </p>
+                    <p>
+                        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit Feedback</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Prepared for CSE 110 meeting minutes practice.</p>
+        <p>
+            Reference:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML documentation</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
