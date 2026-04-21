@@ -1,26 +1,27 @@
-# Dev Chat
+# Dev Chat Standup Notes
 
 ## Date and Time
-Write date and time here
+- Date:
+- Time:
 
 ## Attendees
-Write who was here at the meeting
+- 
 
 ## Missing
-Write who was missing from the meeting here
+- 
 
-## Annoucements
-Write any anoucements that need to be said here
+## Announcements
+- 
 
-## Stand up
+## Standup Updates
 
-|  Member  | Progress |  Blockers  |  Follow-up?  |
-| -------- | -------- |  --------  |   --------   |
-| Member 1 |          |            |              |
-| Member 2 |          |            |              |
-| Member 3 |          |            |              |
-| Member 4 |          |            |              |
-| Member 5 |          |            |              |
+| Member | Yesterday (Progress) | Today (Plan) | Blockers | Follow-up |
+|--------|----------------------|--------------|----------|-----------|
+|Member 1|                      |              |          |           |
+|Member 2|                      |              |          |           |
+|Member 3|                      |              |          |           |
 
-## Goals for next Dev Chat
-Write tasks that are supposed to be completed by next dev chat
+## Goals for Next Dev Chat
+- 
+- 
+- 
