@@ -33,7 +33,7 @@ h2 {
 
 /* ID selector */
 #page-title {
-    background-color: color(display-p3 0.85 0.88 1 / 1);
+    background-color: #d9e0ff;
     padding: 1rem;
     margin: 0;
 }
@@ -216,15 +216,12 @@ section:has(button) {
     background-color: #fff7ed;
 }
 
-/* Nested selectors */
-.content-card {
-    & ul {
-        padding-left: 2rem;
-    }
+.content-card ul {
+    padding-left: 2rem;
+}
 
-    & li {
-        margin-bottom: 0.5rem;
-    }
+.content-card li {
+    margin-bottom: 0.5rem;
 }
 
 /* More unit examples */
