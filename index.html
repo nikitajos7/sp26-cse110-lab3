@@ -6,12 +6,24 @@
     <meta name="description" content="Meeting minutes for the first CSE 110 project meeting">
     <title>CSE 110 Project First Meeting Notes</title>
     <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .quick-note {
+            color: teal;
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>CSE 110 Project First Meeting Notes</h1>
+        <h1 id="page-title" style="text-decoration: underline;">CSE 110 Project First Meeting Notes</h1>
+        <p class="quick-note">Weekly team sync covering setup, roles, and planning.</p>
         <nav>
             <a href="#overview">Overview</a><br>
             <a href="#attendance">Attendance</a><br>
@@ -42,17 +54,17 @@
             </div>
         </section>
 
-        <section id="attendance">
+        <section id="attendance" class="content-card">
             <h2>Attendance</h2>
             <h3>Attendees</h3>
             <ul>
-                <li>Nikita Jos</li>
-                <li>John Doe</li>
-                <li>Jane Smith</li>
+                <li data-role="project-manager">Nikita Jos</li>
+                <li data-role="lead-developer">John Doe</li>
+                <li data-role="quality-assurance">Jane Smith</li>
             </ul>
         </section>
 
-        <section id="agenda">
+        <section id="agenda" class="content-card">
             <h2>Agenda</h2>
             <h3>Topics to Cover</h3>
             <ol>
@@ -63,13 +75,23 @@
             </ol>
         </section>
 
-        <section id="unfinished">
+        <section id="task-board" class="content-card">
+            <h2>Task Board</h2>
+            <h3>Current Work Items</h3>
+            <div class="flex-section">
+                <div class="mini-card">Frontend styling</div>
+                <div class="mini-card">Team coordination</div>
+                <div class="mini-card">Documentation review</div>
+            </div>
+        </section>
+
+        <section id="unfinished" class="content-card">
             <h2>Unfinished Business</h2>
             <h3>Items from Last Meeting</h3>
             <p>None. This was the first meeting.</p>
         </section>
 
-        <section id="new-business">
+        <section id="new-business" class="content-card">
             <h2>New Business</h2>
             <h3>Discussion and Decisions</h3>
             <p>The team discussed the project requirements and agreed on initial responsibilities.</p>
@@ -92,7 +114,7 @@
             </p>
         </section>
 
-        <section id="misc">
+        <section id="misc" class="content-card">
             <h2>Miscellaneous Comments / Questions / Concerns</h2>
             <h3>Additional Notes</h3>
             <p>No major concerns were raised during the meeting.</p>
@@ -106,27 +128,37 @@
             </details>
         </section>
 
-        <section id="media">
+        <section id="summary-grid" class="content-card">
+            <h2>Meeting Summary Grid</h2>
+            <h3>Quick Snapshot</h3>
+            <div class="grid-section">
+                <div class="grid-item">3 attendees present</div>
+                <div class="grid-item">4 agenda topics covered</div>
+                <div class="grid-item">Weekly Wednesday meetings</div>
+            </div>
+        </section>
+
+        <section id="media" class="content-card media-section">
             <h2>Meeting Media</h2>
 
             <h3>Workflow Diagram</h3>
-            <img src="workflow_diagram.jpg" alt="Workflow diagram showing the team project planning process"
+            <img class="media-item" src="workflow_diagram.jpg" alt="Workflow diagram showing the team project planning process"
                 width="600">
 
             <h3>Video Recording of the Meeting</h3>
-            <video controls width="600">
+            <video class="media-item" controls width="600">
                 <source src="meeting_recording.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <h3>Audio Recording of the Meeting</h3>
-            <audio controls>
+            <audio class="media-item" controls>
                 <source src="meeting_recording.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
             </audio>
         </section>
 
-        <section id="form">
+        <section id="form" class="content-card form-section">
             <h2>Feedback Form</h2>
             <h3>Meeting Response</h3>
 
@@ -187,19 +219,19 @@
                     </p>
 
                     <p>
-                        <button type="submit">Submit Feedback</button>
+                        <button class="submit-button" type="submit">Submit Feedback</button>
                     </p>
                 </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="content-card footer-card">
         <hr>
         <p>Prepared for CSE 110 meeting minutes practice.</p>
         <p>
             Reference:
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML documentation</a>
+            <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML documentation</a>
         </p>
     </footer>
 
