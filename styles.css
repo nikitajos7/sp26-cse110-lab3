@@ -1,0 +1,304 @@
+/* Lab 3 CSS stylesheet */
+
+/* CSS variable with fallback */
+:root {
+    --main-accent: #eaa9a9;
+    --soft-bg: hsl(210, 40%, 96%);
+    --card-bg: rgb(255, 255, 255);
+    --main-text: rgba(20, 20, 20, 0.9);
+    --highlight-color: orange;
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--soft-bg, #f4f4f4);
+    line-height: 1.5;
+    color: var(--main-text, black);
+}
+
+/* Selector list */
+h1,
+h2 {
+    text-align: center;
+    color: color-mix(in srgb, rgb(179, 101, 234) 70%, rgb(127, 217, 123) 30%);
+}
+
+/* ID selector */
+#page-title {
+    background-color: color(display-p3 0.85 0.88 1 / 1);
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Class selector */
+.content-card {
+    background-color: var(--card-bg, white);
+    width: 85%;
+    max-width: 950px;
+    min-width: 250px;
+    margin: 20px auto 20px auto;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    border-style: solid;
+    border-color: #d1d5db;
+    border-width: 2px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+#overview {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* Shorthand margin, padding, border */
+header {
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem 1.5rem;
+    border: 3px solid #cbd5e1;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Descendant combinator */
+nav a {
+    display: inline-block;
+    margin: 0.35rem 0.5rem;
+    color: rgb(47, 132, 212);
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 8px;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
+/* :active pseudo-class */
+.submit-button:active {
+    background-color: orange;
+}
+
+/* Attribute selector */
+[data-role="project-manager"] {
+    font-weight: 700;
+    color: rgb(129, 236, 129);
+}
+
+/* Child combinator */
+section > h2 {
+    text-decoration: underline;
+}
+
+/* Adjacent sibling combinator */
+h2 + h3 {
+    color: rgb(235, 107, 92);
+}
+
+/* General sibling combinator */
+h2 ~ p {
+    line-height: 1.6;
+}
+
+/* Combining two selectors */
+section.content-card {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Text */
+p {
+    text-align: left;
+    color: #222222;
+    margin-bottom: 0.25in;
+    font-size: 1rem;
+}
+
+.external-link {
+    text-decoration: underline;
+}
+
+/* Display values */
+span {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+}
+
+footer {
+    display: block;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: inline;
+}
+
+/* Sizing */
+img,
+video {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+}
+
+/* Position */
+header {
+    position: static;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Background */
+.media-section {
+    background-color: #fefce8;
+    text-align: center;
+}
+
+/* Flexbox */
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mini-card {
+    background-color: lightyellow;
+    border: 1px solid gray;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.grid-item {
+    background-color: #e0ecff;
+    border: 2px dashed navy;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* :has() selector */
+section:has(button) {
+    background-color: #fff7ed;
+}
+
+/* Nested selectors */
+.content-card {
+    & ul {
+        padding-left: 2rem;
+    }
+
+    & li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* More unit examples */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+p {
+    margin-bottom: 0.25in;
+}
+
+audio {
+    margin-top: 1cm;
+}
+
+/* Form styling */
+input,
+select,
+textarea,
+button {
+    padding: 0.5rem;
+    margin-top: 8px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+.media-item {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px;
+    position: relative;
+    z-index: 0;
+}
+
+.media-section audio,
+.media-section video,
+.media-section img {
+    max-width: 100%;
+}
+
+header p.quick-note {
+    margin-bottom: 0.75rem;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    .content-card {
+        width: 95%;
+    }
+
+    .flex-section {
+        flex-direction: column;
+    }
+
+    .mini-card {
+        width: 100%;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
